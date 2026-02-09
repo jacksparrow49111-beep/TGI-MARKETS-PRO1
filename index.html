@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGI MARKETS PRO™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Base Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(180deg, #000000, #111111);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Logo/Profile */
+    .logo-wrapper {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      margin: 20px 0;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #111;
+    }
+
+    .logo-wrapper::after {
+      content: '';
+      position: absolute;
+      top: -10px; left: -10px;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      border-radius: 50%;
+      box-shadow: 0 0 25px #9b59b6, 0 0 50px #8e44ad, 0 0 75px #9b59b6;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 25px #9b59b6, 0 0 50px #8e44ad, 0 0 75px #9b59b6; }
+      100% { box-shadow: 0 0 40px #9b59b6, 0 0 70px #8e44ad, 0 0 100px #9b59b6; }
+    }
+
+    .logo-wrapper img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #000;
+    }
+
+    /* Title */
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 2.5rem;
+      color: #FFD700;
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFA500;
+      margin: 20px 0 10px 0;
+    }
+
+    /* Sub-urgent text */
+    .urgent {
+      font-size: 1.5rem;
+      color: #FF3C3C;
+      text-shadow: 0 0 5px #FF3C3C, 0 0 10px #FF3C3C;
+      margin-bottom: 20px;
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.05); }
+    }
+
+    /* Bullet Points */
+    .bullets {
+      text-align: left;
+      width: 100%;
+      margin: 20px 0;
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
+
+    .bullets p {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-left: 10px;
+    }
+
+    /* Telegram Button */
+    .btn {
+      display: inline-block;
+      padding: 16px 28px;
+      margin: 25px 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(90deg, #8e44ad, #3498db);
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #8e44ad, 0 0 30px #3498db;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #8e44ad, 0 0 50px #3498db;
+    }
+
+    /* Bottom Text */
+    .bottom-text {
+      font-size: 1.3rem;
+      color: #fff;
+      text-shadow: 0 0 5px #fff;
+      margin-top: 20px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      h1 { font-size: 2rem; }
+      .urgent { font-size: 1.3rem; }
+      .btn { font-size: 1rem; padding: 14px 24px; }
+      .bullets { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo/Profile -->
+    <div class="logo-wrapper">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/FX_logo.svg/512px-FX_logo.svg.png" alt="FX Logo">
+    </div>
+
+    <!-- Title -->
+    <h1>★TGI MARKETS PRO™★</h1>
+
+    <!-- Urgent Telegram Join -->
+    <div class="urgent">!! JOIN US ON TELEGRAM !!</div>
+
+    <!-- Bullet points -->
+    <div class="bullets">
+      <p>⚡ Professional Intra Day Option Traders</p>
+      <p>💎 Daily Insights & Market Education</p>
+      <p>🟩 14+ Years of Stock Market Experience</p>
+      <p>🟦 Proven Results, Not Words</p>
+    </div>
+
+    <!-- Telegram Button -->
+    <a href="https://t.me/TARGETinv_bot" target="_blank" class="btn">👈 JOIN ON TELEGRAM 👉</a>
+
+    <!-- Bottom text -->
+    <div class="bottom-text">STILL WAITING!?</div>
+  </div>
+</body>
+</html>
